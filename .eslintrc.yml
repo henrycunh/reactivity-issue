@@ -1,0 +1,26 @@
+env:
+    browser: true
+    es2021: true
+extends:
+    - eslint:recommended
+    - plugin:vue/essential
+    - plugin:@typescript-eslint/recommended
+    - plugin:nuxt/recommended
+parserOptions:
+    ecmaVersion: 13
+    parser: "@typescript-eslint/parser"
+    sourceType: module
+plugins:
+    - vue
+    - "@typescript-eslint"
+ignorePatterns:
+    - dist
+    - node_modules
+    - .nuxt
+    - deploy
+rules: 
+    no-undef: "off"
+    vue/multi-word-component-names: "off"
+    "@typescript-eslint/no-explicit-any": "off"
+    "@typescript-eslint/no-namespace": "off"
+    "@typescript-eslint/no-empty-interface": "off"

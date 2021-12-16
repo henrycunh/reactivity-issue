@@ -1,0 +1,48 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "CommonJS",
+        "moduleResolution": "Node",
+        "lib": [
+            "ESNext",
+            "ESNext.AsyncIterable",
+            "DOM"
+        ],
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "allowJs": true,
+        "sourceMap": true,
+        "strict": true,
+        "noEmit": true,
+        "baseUrl": ".",
+        "paths": {
+            "~/*": [
+                "./*"
+            ],
+            "@/*": [
+                "./*"
+            ]
+        },
+        "types": [
+            "@types/node",
+            "@nuxt/types",
+            "unplugin-vue2-script-setup/types"
+        ],
+        "typeRoots": [
+            "./@types"
+        ]
+    },
+    "vueCompilerOptions": {
+        "experimentalCompatMode": 2,
+        "experimentalTemplateCompilerOptions": {
+            "compatConfig": {
+                "Mode": 2
+            }
+        }
+    },
+    "exclude": [
+        "node_modules",
+        ".nuxt",
+        "dist"
+    ]
+}
